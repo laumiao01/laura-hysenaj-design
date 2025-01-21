@@ -1,0 +1,123 @@
+
+
+.navbar {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  
+  .contenitore{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .rectangle {
+    width: 55%; /* Larghezza del rettangolo */
+    height: 700px; /* Altezza del rettangolo */
+    background-color: #E6DACE; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    position: relative;
+    z-index: 0;
+    transition: all 0.3s ease;
+  }
+  .contenitore-secondario {
+    display: flex;
+    flex-direction: row; /* Posiziona gli elementi in orizzontale */
+    align-items: center; /* Allinea gli elementi verticalmente */
+    gap: 100px; /* Spazio tra rectangle2 e il testo */
+  }
+  .rectangle2 {
+      width: 400px; /* Larghezza del rettangolo */
+      height: 550px; /* Altezza del rettangolo */
+      background-color: #F4ECE6; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombreggiatura (opzionale) */
+      position: absolute;
+      top: 20%;
+      left: 35%;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .rectangle2 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    object-fit: cover;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .titolo{
+    text-align: center;
+    margin-top: 20px;
+    font-family:'Poppins', sans-serif;
+    font-weight: 900;
+    color: black;
+  }
+  .sottotitolo{
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: black;
+  }
+  .contenutorettangolo{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hr{
+    width: 200px;
+    border: none;
+    border-top: 2px solid #000;
+  }
+  .rectangle3{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .iconesocial{
+    font-size: 20px;
+    color: #333;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .testo-presentazione{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .rectangle {
+        width: 55%; /* Adatta la larghezza al 90% dello schermo */
+        height: 700px; /* Riduci l'altezza per dispositivi mobili */
+        padding-right: 20px;
+        position: relative;
+  
+    }
+   .rectangle2 {
+        width: 400px; /* Larghezza del rettangolo */
+        height: 550px; /* Altezza del rettangolo */
+        position: absolute;
+        top: 20%;
+        right: 20px;
+        left: auto; 
+   }
+  }
