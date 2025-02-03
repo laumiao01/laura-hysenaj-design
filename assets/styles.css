@@ -28,7 +28,7 @@ h1{
 
 h2{
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   display: flex; /*20px*/
   flex-direction: row;
   justify-content: center;
@@ -36,7 +36,7 @@ h2{
 }
 h3{
   font-family: 'Poppins', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -44,7 +44,7 @@ h3{
 }
 li{
   font-family: 'Poppins', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -52,7 +52,7 @@ li{
 }
 p{
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem; /*16px*/
+  font-size: 16px; /*16px*/
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -103,6 +103,26 @@ hr{
   justify-content: space-around;
   align-items: center;
 }
+.fa-language {
+  margin-right: 20px;
+  font-size: 40px;
+  color: #352824;
+}
+.fa-graduation-cap{
+  margin-right: 20px;
+  font-size: 40px;
+  color: #352824;
+}
+.fa-briefcase{ 
+  margin-right: 20px;
+  font-size: 40px;
+  color: #352824;
+}
+.fa-user-gear{
+  margin-right: 20px;
+  font-size: 40px;
+  color: #352824;
+}
 
 .iconesocial li{
   transition: transform 0.3s, color 0.3s; /* Transizione per l'effetto hover */
@@ -142,7 +162,7 @@ hr{
 
 
 .footer{
-  font-size: small;
+  font-size: 13px;
   height: 100px;
   width: 100%;
   background-color: #DED8D8;
