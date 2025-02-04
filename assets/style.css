@@ -26,110 +26,30 @@ body {
   position: relative;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.p-index {
+  font: 16px "Poppins", sans-serif;
+  margin: 40px;
+  text-align: center;
 }
 
-h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 32px;
+.h1-index {
+  font: 31px "Poppins", sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 80px;
 }
 
-h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 25px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 10px;
-}
-
-.h2-left {
-  justify-content: left;
-}
-
-.h2-right {
-  justify-content: right;
-}
-
-h3 {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 60px;
-  margin-top: 30px;
-}
-
-.h3-left {
-  justify-content: left;
-}
-
-.h3-right {
-  justify-content: right;
-}
-
-.text-resume {
-  margin-bottom: 30px;
-  text-align: left;
-}
-
-.content-resume {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  gap: 20px;
-}
-
-.formazione, .esperienze {
-  border: 4px solid #DED8D8;
-  width: auto;
-  height: auto;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  justify-content: left;
-}
-
-p {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.p-index {
-  font-family: "Poppins", sans-serif;
-  margin: 40px;
-  text-align: center;
-}
-
-.p-portfolio {
-  text-align: center;
-  font-size: 1rem; /*16px*/
-}
-
-.p-resume {
-  font-weight: 100;
-  justify-content: left;
-}
-
-.p-skills {
-  margin-left: 0px;
-}
-
 hr {
   width: 500px;
   background-color: #352824;
+}
+
+.content-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .circle {
@@ -140,6 +60,7 @@ hr {
   display: flex;
   margin: 20px;
   margin-bottom: 20px;
+  justify-content: center;
 }
 
 .img-profile {
@@ -155,13 +76,74 @@ hr {
 }
 
 .iconesocial {
-  width: 450px;
-  font-size: 40px;
+  font-size: 45px;
   color: #352824;
-  gap: 20px;
+  gap: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.iconesocial i:hover {
+  transform: scale(1.2); /* Ingrandisce l'icona al passaggio del mouse */
+  color: #B05A67;
+}
+
+.h1-resume {
+  font: 31px "Poppins", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.h2-resume {
+  font: 25px "Poppins", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.p-resume {
+  font: 16px "Poppins", sans-serif;
+  display: flex;
+  text-align: center;
+  margin: 40px;
+}
+
+.contenuto-resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.resume-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-content: center;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.formazione, .esperienze {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  border: 4px solid #DED8D8;
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 350px;
+}
+
+.p-skills {
+  margin-left: 0px;
 }
 
 .fa-user-gear, .fa-briefcase, .fa-graduation-cap, .fa-language {
@@ -172,11 +154,6 @@ hr {
 
 .iconesocial li {
   transition: transform 0.3s, color 0.3s; /* Transizione per l'effetto hover */
-}
-
-.iconesocial i:hover {
-  transform: scale(1.2); /* Ingrandisce l'icona al passaggio del mouse */
-  color: #B05A67;
 }
 
 .contenuto-portfolio {
