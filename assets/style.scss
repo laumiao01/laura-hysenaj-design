@@ -19,7 +19,6 @@ $grandezza-icone: 45px;
 
 // ELEMENTI SU TUTTE LE PAGINE
 body {
-    background-color: $background;
     color: $dark;
     margin-top: 20px;
     margin-left: 20px;
@@ -31,8 +30,6 @@ body {
     font: $p-size;
     align-items: center;
     background-color: $primary-color;
-    border-radius: 20px;
-    margin: 20px;
   }
 
   .footer{
@@ -53,6 +50,7 @@ body {
   }
 
 //INDEX
+
 .p-index{
     font: $p-size;
     margin: 40px;
@@ -77,6 +75,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+
 
 }  
   
