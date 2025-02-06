@@ -21,11 +21,15 @@ $grandezza-icone: 45px;
 body {
     background-color: $background;
     color: $dark;
-    margin: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
   }
 
   .navbar {
     font: $p-size;
+    align-items: center;
     background-color: $primary-color;
     border-radius: 20px;
     margin: 20px;
@@ -98,6 +102,7 @@ align-items: center;
     transition: transform 0.2s, color 0.3s;
 }
 
+
 .iconesocial{
     font-size: $grandezza-icone;
     color: $dark;
@@ -107,8 +112,12 @@ align-items: center;
     align-items: center;
 }
 .iconesocial i:hover{
-    transform: scale(1.2); /* Ingrandisce l'icona al passaggio del mouse */
+    transform: scale(1.2); 
     color:$hover-color;
+}
+
+.iconesocial li{
+  transition: transform 0.3s, color 0.3s; 
 }
 
 //RESUME
@@ -132,10 +141,15 @@ align-items: center;
     margin: 40px;
 }
 .contenuto-resume{
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Fa in modo che le colonne vanno a capo quando necessario */
+    gap: 1.5rem; /* Imposta lo spazio tra le colonne */
+  }
 .col{
     border: 4px solid $primary-color;
     border-radius: 10px;
@@ -149,6 +163,94 @@ align-items: center;
     margin-left: auto;
 
 }
+.competenze {
+    text-align: left;
+    max-width: 1000px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.lingue {
+    text-align: left;
+    max-width: 1000px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.tag {
+    background-color: $primary-color;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 1px dotted $dark;
+    white-space: nowrap;
+    transition: all 0.3s ease-in-out;
+}
+.fa-user-gear, .fa-briefcase, .fa-graduation-cap, .fa-language{
+    margin-right: 20px;
+    font-size: 30px;
+    color: $dark;
+  }
+.pulsanti{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 40px;
+
+}
+.bottone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark;
+  line-height: normal;
+  text-align: center;
+  padding: 10px;
+  color: #F1EFEF;  
+  gap: 10px;
+  border-radius: 10px;
+}
+  .button {
+    line-height: 1;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap:10px;
+    padding: 0.75em 1em;
+    color: #fff;
+    border: 1px solid transparent;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: $p-size;
+    box-shadow: 0 0.7em 1.5em -0.5em $dark;
+    transition: transform 0.3s;
+    background: $dark;
+  }
+  
+  .button__icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  
+  .button:hover {
+    border-color: $primary-color;
+  }
+  .button:active {
+    transform: scale(0.98);
+    box-shadow: 0 0.5em 1.5em -0.5em $primary-color;
+  }
+
 //PORTFOLIO
 
 .h1-portfolio{
@@ -170,27 +272,6 @@ align-items: center;
     justify-content: center;
     text-align: center;
 }
-
-//vecchio
- 
-
-
-
-
-.p-skills{
-  margin-left: 0px;
-}
-
-.fa-user-gear, .fa-briefcase, .fa-graduation-cap, .fa-language{
-  margin-right: 20px;
-  font-size: 40px;
-  color: #352824;
-}
-
-.iconesocial li{
-  transition: transform 0.3s, color 0.3s; /* Transizione per l'effetto hover */
-}
-
 .contenuto-portfolio{
   display: flex;
   overflow: auto;
@@ -219,18 +300,52 @@ align-items: center;
   transform: scale(1.05); /* Ingrandisce la card al passaggio del mouse */
 }
 
-
-
-
-
-
-
-footer.i{
-  margin: 0;
+//CONTACTS
+.content-contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1000px;
+  border: 2px solid $primary-color
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.button-form {
+  width: 100%;
+  padding: 12px;
+  background: $dark;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+  transition: 0.3s;
+  font-weight: 600;
 }
 
 
+
+
 //MEDIA
+
+@media (max-width: 600px) {
+    .tag-container {
+        justify-content: left;
+    }}
 
 @media (max-width: 1000px) {
 .container{
