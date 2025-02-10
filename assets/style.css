@@ -30,20 +30,13 @@ body {
   color: #352824;
 }
 
-.footer {
-  font: 13px "Poppins", sans-serif;
-  height: 100px;
-  width: 100%;
-  background-color: #F1F2F6;
-  color: #2D1A2E;
-  margin-top: 80px;
-  margin-left: 0;
-  margin-right: 0;
+footer {
+  align-content: center;
   text-align: center;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
+  padding: 10px;
+  background: #642E40;
+  color: white;
+  margin-top: 20px;
 }
 
 .p-index {
@@ -89,35 +82,37 @@ hr {
 .hero {
   position: relative;
   text-align: center;
-  font-size: 3rem;
-  font-weight: bold;
-  color: black;
-  padding-top: 150px; /* Sposta il testo in basso */
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-text {
-  position: relative;
-  z-index: 1; /* Il testo rimane sotto l'immagine */
   font-size: 70px;
+  position: relative;
+  z-index: 0;
+  line-height: 1.2;
 }
 
 .hero-image {
-  position: absolute;
-  top: 170px; /* Regola questo valore per sovrapporre l'immagine */
-  left: 50%;
-  transform: translateX(-50%);
-  height: 700px; /* Regola la grandezza */
-  z-index: 2; /* L'immagine sta sopra */
+  position: relative;
+  width: 100%;
+  max-width: 300px; /* Regola la dimensione in base al design */
+  height: auto;
+  margin-top: -50px; /* Sovrapposizione all'H1 */
+  z-index: 1;
 }
 
-.rectangle {
-  background-color: #F1F2F6;
-  height: 100%;
-  width: 100%;
-  z-index: 3;
-  position: relative;
-  margin-top: 330px;
+.about {
+  background-color: #f5f5f5;
+  padding: 20px 20px;
   border-radius: 30px;
+  text-align: center;
+  max-width: 800px;
+  margin: -30px auto 0 auto; /* Spinge in alto per attaccarsi all'immagine */
+  position: relative;
+  z-index: 2;
 }
 
 .iconesocial {
@@ -211,63 +206,222 @@ hr {
   color: #2D1A2E;
 }
 
-.pulsanti {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.bottone {
+.container-button {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: 16px "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2D1A2E;
-  line-height: normal;
-  text-align: center;
-  padding: 10px;
-  color: #F1EFEF;
-  gap: 10px;
-  border-radius: 10px;
+  padding: 40px;
 }
 
-.button {
-  line-height: 1;
+.label {
   background-color: transparent;
-  cursor: pointer;
+  border: 2px solid rgb(91, 91, 240);
   display: flex;
-  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  width: 180px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  padding: 5px;
+  position: relative;
+  margin: 0;
+}
+
+.label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #2D1A2E;
+  width: 8px;
+  height: 8px;
+  transition: all 0.4s ease;
+  border-radius: 100%;
+  margin: auto;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.label .input {
+  display: none;
+}
+
+.label .title {
+  font: 16px "Poppins", sans-serif;
+  color: #2D1A2E;
+  transition: all 0.4s ease;
+  position: absolute;
+  right: 18px;
   text-align: center;
   align-items: center;
-  gap: 10px;
-  padding: 0.75em 1em;
-  color: #fff;
-  border: 1px solid transparent;
-  font-weight: 700;
-  border-radius: 10px;
-  font-size: 16px "Poppins", sans-serif;
-  box-shadow: 0 0.7em 1.5em -0.5em #2D1A2E;
-  transition: transform 0.3s;
-  background: #2D1A2E;
+  margin: 0;
 }
 
-.button__icon {
-  width: 1.5em;
-  height: 1.5em;
+.label .title:last-child {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  display: flex; /* Usa Flexbox per centrare internamente */
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+  width: 100%; /* Occupa tutta la larghezza del contenitore */
+  height: 100%; /* Occupa tutta l'altezza del contenitore */
+  text-align: center;
 }
 
-.button:hover {
-  border-color: #642E40;
+.label .circle {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: rgb(91, 91, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+  position: relative;
+  box-shadow: 0 0 0 0 rgb(255, 255, 255);
+  overflow: hidden;
 }
 
-.button:active {
-  transform: scale(0.98);
-  box-shadow: 0 0.5em 1.5em -0.5em #642E40;
+.label .circle .icon {
+  color: #2D1A2E;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease;
 }
 
+.label .circle .square {
+  aspect-ratio: 1;
+  width: 15px;
+  border-radius: 2px;
+  background-color: #F1F2F6;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease;
+}
+
+.label .circle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #A8C0D8;
+  width: 100%;
+  height: 0;
+  transition: all 0.4s ease;
+}
+
+.label:has(.input:checked) {
+  width: 57px;
+  animation: installed 0.4s ease 3.5s forwards;
+}
+
+.label:has(.input:checked)::before {
+  animation: rotate 3s ease-in-out 0.4s forwards;
+}
+
+.label .input:checked + .circle {
+  animation: pulse 1s forwards, circleDelete 0.2s ease 3.5s forwards;
+  rotate: 180deg;
+}
+
+.label .input:checked + .circle::before {
+  animation: installing 3s ease-in-out forwards;
+}
+
+.label .input:checked + .circle .icon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.label .input:checked ~ .circle .square {
+  opacity: 1;
+  visibility: visible;
+}
+
+.label .input:checked ~ .title {
+  opacity: 0;
+  visibility: hidden;
+  justify-content: end;
+}
+
+.label .input:checked ~ .title:last-child {
+  animation: showInstalledMessage 0.4s ease 3.5s forwards;
+}
+
+@keyframes pulse {
+  0% {
+    scale: 0.95;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    scale: 1;
+    box-shadow: 0 0 0 16px rgba(255, 255, 255, 0);
+  }
+  100% {
+    scale: 0.95;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+@keyframes installing {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-90deg) translate(27px) rotate(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  99% {
+    transform: rotate(270deg) translate(27px) rotate(270deg);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes installed {
+  100% {
+    width: 100px;
+    border-color: rgb(35, 174, 35);
+    display: flex;
+    justify-content: center;
+  }
+}
+@keyframes circleDelete {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes showInstalledMessage {
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 .badge {
-  background-color: #642E40;
+  background-color: #A8C0D8;
   color: #2D1A2E;
   padding: 15px;
   border-radius: 10px;
@@ -281,54 +435,8 @@ hr {
   height: 200px;
 }
 
-.card {
-  width: 300px;
-  height: 200px;
-  perspective: 1000px;
-}
-
-.card-inner {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.999s;
-}
-
-.card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.card-front {
-  background-color: #6A2C70;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  border: 10px solid #6A2C70;
-  border-radius: 10px;
-  justify-content: center;
-  font-size: 24px;
-  transform: rotateY(0deg);
-}
-
-.card-back {
-  background-color: #F08A5D;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  border: 10px solid #F08A5D;
-  border-radius: 10px;
-  justify-content: center;
-  font-size: 24px;
-  transform: rotateY(180deg);
+.intro-porfolio {
+  margin: 40px;
 }
 
 .h1-portfolio {
@@ -337,6 +445,7 @@ hr {
   flex-direction: row;
   justify-content: center;
   margin-top: 100px;
+  text-align: center;
 }
 
 .h2-portfolio {
@@ -353,30 +462,70 @@ hr {
   text-align: center;
 }
 
-.contenuto-portfolio {
-  display: flex;
-  overflow: auto;
-  padding: 20px;
-  gap: 20px; /*20px*/
+.container-portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonne fisse */
+  gap: 20px; /* Distanza tra gli elementi */
+  max-width: 80%; /* Limita la larghezza massima */
+  margin: auto; /* Centra il contenitore */
+  justify-content: center;
 }
 
-.card {
-  flex: 0 0 auto;
-  height: 400px; /*300px*/
-  width: 500px; /*600px*/
+.card-porfolio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 220px;
+  padding: 20px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid #A8C0D8;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  height: 200px;
+  width: 400px;
+}
+
+.p-portfolio1 {
+  margin: 0;
+  text-align: left;
+  font-weight: 700;
+}
+
+.p-portfolio2 {
+  margin: 0;
+  text-align: left;
+}
+
+.imag-porfolio {
+  height: 60px;
+  width: 60px;
+}
+
+.content-porfolio {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #F1EFEF;
-  border-radius: 5px;
-  padding: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+  align-items: flex-start;
+  gap: 10px;
+  color: #000000;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  font: 16px "Poppins", sans-serif;
 }
 
-.card:hover {
-  transform: scale(1.05); /* Ingrandisce la card al passaggio del mouse */
+.content .heading {
+  font-weight: 700;
+  font-size: 36px;
+  z-index: 1;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.scarica-link {
+  color: #A8C0D8; /* Cambia il colore del link */
+  text-decoration: none; /* Rimuove la sottolineatura */
+  font-weight: bold; /* Rende il testo in grassetto */
+}
+
+.scarica-link:hover {
+  color: blue; /* Cambia colore al passaggio del mouse */
 }
 
 .content-contacts {
@@ -425,6 +574,19 @@ input, textarea {
   font-weight: 600;
 }
 
+@media screen and (max-width: 1024px) {
+  .container-portfolio {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonne su tablet */
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-portfolio {
+    grid-template-columns: repeat(1, 1fr); /* 1 colonna su mobile */
+  }
+  .container-portfolio .card-porfolio {
+    width: 100%; /* 1 colonna su dispositivi mobili */
+  }
+}
 @media (max-width: 600px) {
   .tag-container {
     justify-content: left;
