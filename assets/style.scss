@@ -12,7 +12,9 @@ $h2-size: 25px 'Poppins', sans-serif;
 $h3-size: 20px 'Poppins', sans-serif;
 $p-size: 16px 'Poppins', sans-serif;
 $p-small: 13px 'Poppins', sans-serif;
-
+p{
+  margin: 0;
+}
 //ELEMENTI VARI 
 $lunghezza-standard-linea: 500px;
 $grandezza-icone: 45px;
@@ -30,30 +32,27 @@ body {
     margin-bottom: 0;
   }
 
-  .navbar{
-    font: $p-size;
-    align-items: center;
-    background-color: $background;
-    height: 80px;
-    border-bottom: 1px solid #ada8b6;
+  .navbar {
+    background-color: #EFECFF;
+    transition: background-color 0.3s ease-in-out;
   }
   .custom-btn {
-    background-color: $dark; /* Cambia il colore di sfondo */
+    background-color: #8588E0; /* Cambia il colore di sfondo */
     color: white; /* Cambia il colore del testo */
     border-radius: 10px;
   }
   .custom-btn:hover {
-    background-color: $primary-color; /* Cambia colore al passaggio del mouse */
-    border-color: $dark;
-    color: #352824;
+    background-color: white; /* Cambia colore al passaggio del mouse */
+    border-color: #8588E0;
+    color: #8588E0 ;
   }
 
     footer {
       align-content: center;
       text-align: center;
       padding: 10px;
-      background: #642E40;
-      color: white;
+      background: #EFECFF;
+      color: black;
       margin-top: 20px;
   }
   
@@ -141,15 +140,18 @@ align-items: center;
 .iconesocial{
   margin: 40px;
     font-size: $grandezza-icone;
-    color: $dark;
+    color: #7994A0;
     gap: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.text-body{
+  color: #7994A0 !important;
+}
 .iconesocial i:hover{
     transform: scale(1.2); 
-    color:$hover-color;
+    color:#BED6DF;
 }
 
 .iconesocial li{
@@ -188,7 +190,7 @@ align-items: center;
     gap: 1.5rem; /* Imposta lo spazio tra le colonne */
   }
 .col{
-    border: 4px solid $primary-color;
+    border: 1px solid #7994A0;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
@@ -222,6 +224,32 @@ align-items: center;
     font-size: 30px;
     color: $dark;
   }
+
+  .badge{
+    background-color: white;
+    color: $dark;
+    padding: 15px;
+    border:1px solid #7994A0;
+    border-radius: 10px;
+    width: 230px;
+  }
+  .badge-custom-font {
+    font: $p-size;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .badge-elements{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: left;
+  }
+  .img-portfolio{
+    height: 200px;
+  }
+  
+
 //button download
 .container-button{
   padding: 0;
@@ -447,20 +475,6 @@ align-items: center;
 //fine
 
 
-.badge{
-  background-color: $accent;
-  color: $dark;
-  padding: 15px;
-  border-radius: 10px;
-}
-.badge-custom-font {
-  font: $p-size;
-}
-.img-portfolio{
-  height: 200px;
-}
-
-
 //PORTFOLIO
 
 .intro-porfolio{
@@ -504,7 +518,7 @@ align-items: center;
   padding: 20px;
   border-radius: 24px;
   overflow: hidden;
-  border: 1px solid $accent;
+  border: 1px solid #7994A0;
   transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
   height: 200px;
   width: 400px;
@@ -559,20 +573,26 @@ align-items: center;
   align-items: center;
   justify-content: center;
 }
-.contact-form{
+
+.container-form{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: baseline;
   justify-content: center;
-  align-items: center;
+  gap: 40px;
+}
+.img-form{
+  height: 300px;
+  width: 400px;
+  margin: 50px;
 }
 .container-resume {
   background: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 40%;
-  max-width: 1000px;
-  border: 2px solid $primary-color
+  width: 500px;
+  border: 1px solid #7994A0;
 }
 input, textarea {
   width: 100%;
@@ -584,7 +604,7 @@ input, textarea {
 .button-form {
   width: 100%;
   padding: 12px;
-  background: $dark;
+  background: #8588E0;
   color: white;
   border: none;
   border-radius: 5px;
@@ -598,6 +618,7 @@ input, textarea {
 
 
 //MEDIA
+
 
 @media screen and (max-width: 1024px) {
   .container-portfolio {

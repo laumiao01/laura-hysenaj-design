@@ -1,3 +1,7 @@
+p {
+  margin: 0;
+}
+
 html {
   scroll-behavior: smooth; /* Effetto di scorrimento fluido */
 }
@@ -11,31 +15,28 @@ body {
 }
 
 .navbar {
-  font: 16px "Poppins", sans-serif;
-  align-items: center;
-  background-color: #F1F2F6;
-  height: 80px;
-  border-bottom: 1px solid #ada8b6;
+  background-color: #EFECFF;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .custom-btn {
-  background-color: #2D1A2E; /* Cambia il colore di sfondo */
+  background-color: #8588E0; /* Cambia il colore di sfondo */
   color: white; /* Cambia il colore del testo */
   border-radius: 10px;
 }
 
 .custom-btn:hover {
-  background-color: #642E40; /* Cambia colore al passaggio del mouse */
-  border-color: #2D1A2E;
-  color: #352824;
+  background-color: white; /* Cambia colore al passaggio del mouse */
+  border-color: #8588E0;
+  color: #8588E0;
 }
 
 footer {
   align-content: center;
   text-align: center;
   padding: 10px;
-  background: #642E40;
-  color: white;
+  background: #EFECFF;
+  color: black;
   margin-top: 20px;
 }
 
@@ -118,16 +119,20 @@ hr {
 .iconesocial {
   margin: 40px;
   font-size: 45px;
-  color: #2D1A2E;
+  color: #7994A0;
   gap: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.text-body {
+  color: #7994A0 !important;
+}
+
 .iconesocial i:hover {
   transform: scale(1.2);
-  color: #7F3F53;
+  color: #BED6DF;
 }
 
 .iconesocial li {
@@ -169,7 +174,7 @@ hr {
 }
 
 .col {
-  border: 4px solid #642E40;
+  border: 1px solid #7994A0;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
@@ -204,6 +209,33 @@ hr {
   margin-right: 20px;
   font-size: 30px;
   color: #2D1A2E;
+}
+
+.badge {
+  background-color: white;
+  color: #2D1A2E;
+  padding: 15px;
+  border: 1px solid #7994A0;
+  border-radius: 10px;
+  width: 230px;
+}
+
+.badge-custom-font {
+  font: 16px "Poppins", sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.badge-elements {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: left;
+}
+
+.img-portfolio {
+  height: 200px;
 }
 
 .container-button {
@@ -420,21 +452,6 @@ hr {
     visibility: visible;
   }
 }
-.badge {
-  background-color: #A8C0D8;
-  color: #2D1A2E;
-  padding: 15px;
-  border-radius: 10px;
-}
-
-.badge-custom-font {
-  font: 16px "Poppins", sans-serif;
-}
-
-.img-portfolio {
-  height: 200px;
-}
-
 .intro-porfolio {
   margin: 40px;
 }
@@ -479,7 +496,7 @@ hr {
   padding: 20px;
   border-radius: 24px;
   overflow: hidden;
-  border: 1px solid #A8C0D8;
+  border: 1px solid #7994A0;
   transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
   height: 200px;
   width: 400px;
@@ -535,11 +552,18 @@ hr {
   justify-content: center;
 }
 
-.contact-form {
+.container-form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: baseline;
   justify-content: center;
-  align-items: center;
+  gap: 40px;
+}
+
+.img-form {
+  height: 300px;
+  width: 400px;
+  margin: 50px;
 }
 
 .container-resume {
@@ -547,9 +571,8 @@ hr {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 40%;
-  max-width: 1000px;
-  border: 2px solid #642E40;
+  width: 500px;
+  border: 1px solid #7994A0;
 }
 
 input, textarea {
@@ -563,7 +586,7 @@ input, textarea {
 .button-form {
   width: 100%;
   padding: 12px;
-  background: #2D1A2E;
+  background: #8588E0;
   color: white;
   border: none;
   border-radius: 5px;
