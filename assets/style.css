@@ -15,6 +15,7 @@ body {
 }
 
 .navbar {
+  min-height: 80px;
   background-color: #EFECFF;
   transition: background-color 0.3s ease-in-out;
 }
@@ -625,5 +626,21 @@ input, textarea {
     width: 100%;
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .container-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-form {
+    width: 100%; /* Larghezza massima per evitare overflow */
+    max-width: 400px; /* Mantiene una dimensione ragionevole */
+    height: auto;
+    margin: 20px 0;
+  }
+  .container-resume {
+    width: 90%; /* Adatta la larghezza per schermi piccoli */
+    max-width: 500px; /* Evita che diventi troppo grande */
   }
 }/*# sourceMappingURL=style.css.map */
