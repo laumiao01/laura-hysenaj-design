@@ -2,17 +2,16 @@
 <html lang="it">    
 <head>
     <meta charset="UTF-8">
-    <META name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Laura Hysenaj website</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/2bfcaf43d3.js" crossorigin="anonymous"></script>
-        <link rel="ICON" type="image/x-icon" href="assets/favicon/FAVICON.png">
-        <link rel="stylesheet" href="assets/style.css">
-    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Hysenaj website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2bfcaf43d3.js" crossorigin="anonymous"></script>
+    <link rel="ICON" type="image/x-icon" href="assets/favicon/FAVICON.png">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
 
- <body>
+<body class="page-container">
 <!-- Navbar -->
-
 <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
   <a class="navbar-brand d-flex align-items-center" href="index.html">
       <img src="assets/icona/Icona.png" height="30" class="mr-2" alt="Logo Laura Hysenaj">
@@ -31,44 +30,59 @@
   </div>
 </nav>
 
-  <!-- Contact me -->
-<section id="contacts" class="section">
-<div class="container-form">
-  
-  <div class="content-contacts">
-    <h1 class="h1-portfolio">Teniamoci in contatto! </h1>
-      <p class="p-portfolio">Compila il form qui in basso per entrare in contatto con me.</p>
-      <img class="img-form" src="assets/img/601.jpg">
-    </div> 
-  
-
-      <div class="container-resume">
-        <form onsubmit="return sendMail(event)">
-          
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" placeholder="Mario Rossi" required autocomplete="name">
-      
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="esempio@esempio.it" required autocomplete="email">
-      
-          <label for="messaggio">Messaggio:</label>
-          <textarea id="messaggio" name="messaggio" rows="5" placeholder="Scrivi il tuo messaggio..." required autocomplete="off"></textarea>
-          
-          <button class="button-form" type="submit" onclick="sendMail()">Invia</button>
-      </form>
-      </div>
-    </div>
+<!-- Contact me -->
+<div class="main-content">
+    <section id="contacts" class="section">
+        <div class="container-form">
+            <div class="content-contacts">
+                <h1 class="h1-portfolio">Teniamoci in contatto!</h1>
+                <p class="p-portfolio">Compila il form qui in basso per entrare in contatto con me.</p>
+                <img class="img-form" src="assets/img/601.jpg">
+            </div> 
+        
+            <div class="container-resume">
+                <form onsubmit="return sendMail(event)">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Mario Rossi" required autocomplete="name">
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="esempio@esempio.it" required autocomplete="email">
+            
+                    <label for="messaggio">Messaggio:</label>
+                    <textarea id="messaggio" name="messaggio" rows="5" placeholder="Scrivi il tuo messaggio..." required autocomplete="off"></textarea>
+                    
+                    <button class="button-form" type="submit">Invia</button>
+                </form>
+            </div>
+        </div>
     </section>
+</div>
 
-<!-- Fine Contact me -->
-
-<!--footer-->
+<!-- Footer -->
 <footer>
-    <p>Copyright © 2025 Laura Hysenaj. Tutti i diritti riservati.</p>
+    <p>Copyright © 2025 Laura Hysenaj.</p>
+    <p>Tutti i diritti riservati.</p>
+    <div class="footer-social">
+      <a href="mailto:laura.hysenaj@email.com" target="_blank" class="text-body">
+          <span class="social-icon"><i class="fa-solid fa-envelope"></i></span>
+      </a>
+      <a href="https://www.instagram.com/tuoprofilo" target="_blank" class="text-body">
+          <span class="social-icon"><i class="fa-brands fa-instagram"></i></span>
+      </a>
+      <a href="https://www.linkedin.com/in/tuoprofilo" target="_blank" class="text-body">
+          <span class="social-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+      </a>
+      <a href="https://github.com/tuoprofilo" target="_blank" class="text-body">
+          <span class="social-icon"><i class="fa-brands fa-github"></i></span>
+      </a>
+      <a href="https://www.upwork.com/freelancers/tuoprofilo" target="_blank" class="text-body">
+          <span class="social-icon"><i class="fa-brands fa-upwork"></i></span>
+      </a>
+  </div>
 </footer>
 
 <script src="https://kit.fontawesome.com/2bfcaf43d3.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
-    </html>
+</html>
