@@ -8,6 +8,7 @@
         <script src="https://kit.fontawesome.com/2bfcaf43d3.js" crossorigin="anonymous"></script>
         <link rel="ICON" type="image/x-icon" href="assets/favicon/FAVICON.png">
         <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     </head>
 
  <body>
@@ -35,42 +36,46 @@
 
 <!-- Hero Section -->
 <header class="hero">
-    <h1 class="hero-text">I’m Laura,<br> UI/UX Designer</h1>
+    <h1 class="hero-text">I’m Laura,<br> UI/UX Designer 🎨</h1>
     <img class="hero-image" src="assets/img/immagine senza sfondo copia.png" alt="Immagine di Laura">
 </header>
 
 <!-- About Me -->
-<section id="about" class="about">
+<section id="about" class="about" data-aos="fade-up">
+  <img src="assets/img/IMG_5503 copia.png" alt="Immagine di Laura">
+  <div class="about-section">
     <p>
         Ciao! Sono Laura, una Graphic Designer con un forte interesse per il mondo del UX/UI Design. <br>
  La mia missione? Creare esperienze digitali intuitive!<br>
         Amo la creatività, il design e la libertà di esprimermi attraverso il mio lavoro.
     </p>
+    <div class="iconesocial">
+      <a href="https://www.instagram.com/tuoprofilo" target="_blank" class="text-body">
+         <span class="social-icon"><i class="fa-brands fa-instagram"></i></span>
+      </a>
+      <a href="https://www.linkedin.com/in/tuoprofilo" target="_blank" class="text-body">
+         <span class="social-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+      </a>
+      <a href="https://github.com/tuoprofilo" target="_blank" class="text-body">
+         <span class="social-icon"><i class="fa-brands fa-github"></i></span>
+      </a>
+      <a href="https://www.upwork.com/freelancers/tuoprofilo" target="_blank" class="text-body">
+         <span class="social-icon"><i class="fa-brands fa-upwork"></i></span>
+      </a>
+   </div>
+  </div>
+</div>
 </section>
 
       
 
 
-  <div class="iconesocial">
-    <a href="https://www.instagram.com/tuoprofilo" target="_blank" class="text-body">
-       <span class="social-icon"><i class="fa-brands fa-instagram"></i></span>
-    </a>
-    <a href="https://www.linkedin.com/in/tuoprofilo" target="_blank" class="text-body">
-       <span class="social-icon"><i class="fa-brands fa-linkedin-in"></i></span>
-    </a>
-    <a href="https://github.com/tuoprofilo" target="_blank" class="text-body">
-       <span class="social-icon"><i class="fa-brands fa-github"></i></span>
-    </a>
-    <a href="https://www.upwork.com/freelancers/tuoprofilo" target="_blank" class="text-body">
-       <span class="social-icon"><i class="fa-brands fa-upwork"></i></span>
-    </a>
- </div>
-</div>
+
 
 
 <!-- Porfolio -->
 
-<section id="portfolio">
+<section id="portfolio" data-aos="fade-up">
 <div class="intro-porfolio">
   <h1 class="h1-portfolio">Benvenuti nel mio portfolio!</h1>
     <p class="p-portfolio">Qui troverai una selezione dei miei progetti, che spaziano dal Graphic Design al UX/UI Design.
@@ -169,6 +174,14 @@
 <footer>
     <p>Copyright © 2025 Laura Hysenaj. Tutti i diritti riservati.</p>
 </footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800, // Durata animazione
+        once: true,    // L'animazione avviene solo una volta
+    });
+</script>
 
 <script src="https://kit.fontawesome.com/2bfcaf43d3.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -21,15 +21,16 @@ body {
 }
 
 .custom-btn {
-  background-color: #8588E0; /* Cambia il colore di sfondo */
+  background: linear-gradient(360deg, #cdcef8, #8588E0);
   color: white; /* Cambia il colore del testo */
   border-radius: 10px;
+  border: 1px solid #8588E0;
 }
 
 .custom-btn:hover {
-  background-color: white; /* Cambia colore al passaggio del mouse */
   border-color: #8588E0;
-  color: #8588E0;
+  color: white;
+  box-shadow: 0 0px 15px rgba(97, 22, 218, 0.4); /* Effetto glow */
 }
 
 footer {
@@ -39,6 +40,10 @@ footer {
   background: #EFECFF;
   color: black;
   margin-top: 20px;
+  margin-right: -20px;
+  margin-left: -20px;
+  height: 100px;
+  bottom: 0;
 }
 
 .p-index {
@@ -88,6 +93,8 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .hero-text {
@@ -107,20 +114,27 @@ hr {
 }
 
 .about {
-  background-color: #f5f5f5;
-  padding: 20px 20px;
-  border-radius: 30px;
+  background-color: #EFECFF;
   text-align: center;
-  max-width: 800px;
-  margin: -30px auto 0 auto; /* Spinge in alto per attaccarsi all'immagine */
   position: relative;
   z-index: 2;
+  padding: 30px;
+  height: 400px;
+  margin-right: -20px;
+  margin-left: -20px;
+  display: flex;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .iconesocial {
   margin: 40px;
   font-size: 45px;
-  color: #7994A0;
+  color: #8588E0;
   gap: 30px;
   display: flex;
   justify-content: center;
@@ -128,12 +142,12 @@ hr {
 }
 
 .text-body {
-  color: #7994A0 !important;
+  color: black !important;
 }
 
 .iconesocial i:hover {
   transform: scale(1.2);
-  color: #BED6DF;
+  color: #8588E0;
 }
 
 .iconesocial li {
@@ -175,11 +189,17 @@ hr {
 }
 
 .col {
-  border: 1px solid #7994A0;
+  border: 1px solid #8588E0;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
   padding: 20px;
+  background: white;
+}
+
+.col:hover {
+  border-color: #8588E0;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
 .competenze {
@@ -206,6 +226,10 @@ hr {
   gap: 10px;
 }
 
+.badge:hover {
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
 .fa-user-gear, .fa-briefcase, .fa-graduation-cap, .fa-language {
   margin-right: 20px;
   font-size: 30px;
@@ -216,7 +240,7 @@ hr {
   background-color: white;
   color: #2D1A2E;
   padding: 15px;
-  border: 1px solid #7994A0;
+  border: 1px solid #8588E0;
   border-radius: 10px;
   width: 230px;
 }
@@ -496,11 +520,15 @@ hr {
   width: 220px;
   padding: 20px;
   border-radius: 24px;
+  border: 1px solid #8588E0;
   overflow: hidden;
-  border: 1px solid #7994A0;
   transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
   height: 200px;
   width: 400px;
+}
+
+.card-porfolio:hover {
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
 .p-portfolio1 {
@@ -537,13 +565,13 @@ hr {
 }
 
 .scarica-link {
-  color: #A8C0D8; /* Cambia il colore del link */
+  color: #8588E0; /* Cambia il colore del link */
   text-decoration: none; /* Rimuove la sottolineatura */
   font-weight: bold; /* Rende il testo in grassetto */
 }
 
 .scarica-link:hover {
-  color: blue; /* Cambia colore al passaggio del mouse */
+  color: #8588E0; /* Cambia colore al passaggio del mouse */
 }
 
 .content-contacts {
