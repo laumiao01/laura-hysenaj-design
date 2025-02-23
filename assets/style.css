@@ -407,6 +407,11 @@ body {
   transform: scale(1.05);
 }
 
+.btn:hover {
+  background: #8588E0;
+  transform: scale(1.05);
+}
+
 .intro-porfolio {
   margin: 40px;
 }

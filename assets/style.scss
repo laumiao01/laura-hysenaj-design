@@ -7,7 +7,6 @@ $shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 $hover-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombra per effetto sollevato */;
 $Shadow-glow: 0 0px 15px rgba(97, 22, 218, 0.4); /* Effetto glow */;
 $dark: #2D1A2E;
-$accent: #A8C0D8;
 
 //FONT
 $h1-size: 31px 'Poppins', sans-serif;
@@ -419,6 +418,10 @@ body {
 }
 
 .cv-download .btn:hover {
+  background: $secondary-color;
+  transform: scale(1.05);
+} 
+.btn:hover{
   background: $secondary-color;
   transform: scale(1.05);
 }
