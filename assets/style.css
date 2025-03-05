@@ -38,14 +38,14 @@ body {
 }
 
 .custom-btn {
-  background: #6a6eec;
+  background: #5e63f8;
   color: white; /* Cambia il colore del testo */
   border-radius: 10px;
-  border: 1px solid #6a6eec;
+  border: 1px solid #5e63f8;
 }
 
 .custom-btn:hover {
-  border-color: #6a6eec;
+  border-color: #5e63f8;
   color: white;
   box-shadow: 0 0px 15px rgba(97, 22, 218, 0.4);
 }
@@ -185,7 +185,7 @@ html, body {
 .iconesocial {
   margin: 40px;
   font-size: 45px;
-  color: #6a6eec;
+  color: #5e63f8;
   gap: 30px;
   display: flex;
   justify-content: center;
@@ -198,7 +198,7 @@ html, body {
 
 .iconesocial i:hover {
   transform: scale(1.2);
-  color: #6a6eec;
+  color: #5e63f8;
 }
 
 .iconesocial li {
@@ -351,7 +351,7 @@ body {
   background-color: white;
   color: #2D1A2E;
   padding: 15px;
-  border: 1px solid #6a6eec;
+  border: 1px solid #5e63f8;
   border-radius: 10px;
   width: 230px;
 }
@@ -380,8 +380,8 @@ body {
 }
 
 .cv-download .btn {
-  background: #6a6eec;
-  border: #6a6eec;
+  background: #5e63f8;
+  border: #5e63f8;
   color: white;
   padding: 14px 28px;
   border-radius: 12px;
@@ -400,12 +400,12 @@ body {
 }
 
 .cv-download .btn:hover {
-  background: #6a6eec;
+  background: #5e63f8;
   transform: scale(1.05);
 }
 
 .btn:hover {
-  background: #6a6eec;
+  background: #5e63f8;
   transform: scale(1.05);
 }
 
@@ -493,13 +493,13 @@ body {
 }
 
 .scarica-link {
-  color: #6a6eec; /* Cambia il colore del link */
+  color: #5e63f8; /* Cambia il colore del link */
   text-decoration: none; /* Rimuove la sottolineatura */
   font-weight: bold; /* Rende il testo in grassetto */
 }
 
 .scarica-link:hover {
-  color: #6a6eec; /* Cambia colore al passaggio del mouse */
+  color: #5e63f8; /* Cambia colore al passaggio del mouse */
 }
 
 .content-contacts {
@@ -529,13 +529,13 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   width: 500px;
-  border: 1px solid #6a6eec;
+  border: 1px solid #5e63f8;
 }
 
 input, textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #6a6eec;
+  border: 1px solid #5e63f8;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -543,7 +543,7 @@ input, textarea {
 .button-form {
   width: 100%;
   padding: 12px;
-  background: #6a6eec;
+  background: #5e63f8;
   color: white;
   border: none;
   border-radius: 5px;
