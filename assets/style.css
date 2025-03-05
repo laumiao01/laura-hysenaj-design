@@ -38,14 +38,14 @@ body {
 }
 
 .custom-btn {
-  background: #8588E0;
+  background: #6a6eec;
   color: white; /* Cambia il colore del testo */
   border-radius: 10px;
-  border: 1px solid #8588E0;
+  border: 1px solid #6a6eec;
 }
 
 .custom-btn:hover {
-  border-color: #8588E0;
+  border-color: #6a6eec;
   color: white;
   box-shadow: 0 0px 15px rgba(97, 22, 218, 0.4);
 }
@@ -83,7 +83,7 @@ footer {
 }
 
 .h1-index {
-  font: 31px "Poppins", sans-serif;
+  font: 1.938rem "Poppins", sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -92,7 +92,7 @@ footer {
 }
 
 .h1-index2 {
-  font: 31px "Poppins", sans-serif;
+  font: 1.938rem "Poppins", sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -120,7 +120,7 @@ footer {
 }
 
 .hero-text {
-  font-size: 70px;
+  font-size: 4.375rem;
   position: relative;
   z-index: 0;
   line-height: 1.2;
@@ -185,7 +185,7 @@ html, body {
 .iconesocial {
   margin: 40px;
   font-size: 45px;
-  color: #8588E0;
+  color: #6a6eec;
   gap: 30px;
   display: flex;
   justify-content: center;
@@ -198,7 +198,7 @@ html, body {
 
 .iconesocial i:hover {
   transform: scale(1.2);
-  color: #8588E0;
+  color: #6a6eec;
 }
 
 .iconesocial li {
@@ -209,19 +209,6 @@ html, body {
 .resume-section {
   text-align: center;
   padding: 60px 20px;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.section-subtitle {
-  font-size: 1.2rem;
-  color: #2D1A2E;
-  max-width: 800px;
-  margin: 0 auto 30px;
 }
 
 /* Box Formazione & Esperienze */
@@ -275,8 +262,8 @@ body {
 }
 
 .skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Larghezza minima aumentata */
+  display: flex;
+  flex-wrap: wrap;
   row-gap: 20px;
   -moz-column-gap: 15px;
        column-gap: 15px; /* Maggiore spazio tra le colonne */
@@ -324,6 +311,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
+  row-gap: 20px;
   flex-wrap: wrap;
   margin-top: 15px;
 }
@@ -363,13 +351,13 @@ body {
   background-color: white;
   color: #2D1A2E;
   padding: 15px;
-  border: 1px solid #8588E0;
+  border: 1px solid #6a6eec;
   border-radius: 10px;
   width: 230px;
 }
 
 .badge-custom-font {
-  font: 16px "Poppins", sans-serif;
+  font: 1rem "Poppins", sans-serif;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -392,8 +380,8 @@ body {
 }
 
 .cv-download .btn {
-  background: #8588E0;
-  border: #8588E0;
+  background: #6a6eec;
+  border: #6a6eec;
   color: white;
   padding: 14px 28px;
   border-radius: 12px;
@@ -412,12 +400,12 @@ body {
 }
 
 .cv-download .btn:hover {
-  background: #8588E0;
+  background: #6a6eec;
   transform: scale(1.05);
 }
 
 .btn:hover {
-  background: #8588E0;
+  background: #6a6eec;
   transform: scale(1.05);
 }
 
@@ -426,7 +414,7 @@ body {
 }
 
 .h1-portfolio {
-  font: 31px "Poppins", sans-serif;
+  font: 1.938rem "Poppins", sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -435,7 +423,7 @@ body {
 }
 
 .h2-portfolio {
-  font: 25px "Poppins", sans-serif;
+  font: 1.563rem "Poppins", sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -443,7 +431,7 @@ body {
 }
 
 .p-portfolio {
-  font: 16px "Poppins", sans-serif;
+  font: 1rem "Poppins", sans-serif;
   justify-content: center;
   text-align: center;
 }
@@ -494,24 +482,24 @@ body {
   gap: 10px;
   color: #2D1A2E;
   transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-  font: 16px "Poppins", sans-serif;
+  font: 1rem "Poppins", sans-serif;
 }
 
 .content .heading {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2.25rem;
   z-index: 1;
   transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .scarica-link {
-  color: #8588E0; /* Cambia il colore del link */
+  color: #6a6eec; /* Cambia il colore del link */
   text-decoration: none; /* Rimuove la sottolineatura */
   font-weight: bold; /* Rende il testo in grassetto */
 }
 
 .scarica-link:hover {
-  color: #8588E0; /* Cambia colore al passaggio del mouse */
+  color: #6a6eec; /* Cambia colore al passaggio del mouse */
 }
 
 .content-contacts {
@@ -541,26 +529,26 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   width: 500px;
-  border: 1px solid #8588E0;
+  border: 1px solid #6a6eec;
 }
 
 input, textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #8588E0;
+  border: 1px solid #6a6eec;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .button-form {
   width: 100%;
   padding: 12px;
-  background: #8588E0;
+  background: #6a6eec;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin-top: 10px;
   transition: 0.3s;
   font-weight: 600;
