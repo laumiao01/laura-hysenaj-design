@@ -19,7 +19,7 @@ function sendMail(event) {
             console.log("SUCCESS!", response);
             location.reload();
         }, function(error) {
-            alert("Errore nell'invio dell'email. Controlla la console per maggiori dettagli.");
+            document.querySelector(".button-form").innerHTML = "Errore, riprova più tardi.";
             console.log("FAILED...", error);
         });
 

@@ -55,7 +55,7 @@ footer {
   background: rgba(239, 236, 255, 0.9);
   text-align: center;
   padding: 20px;
-  margin-top: auto; /* Assicura che rimanga in fondo */
+  margin-top: 0; /* Assicura che rimanga in fondo */
 }
 
 .footer-social {
@@ -73,14 +73,13 @@ footer {
 .page-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Assicura che la pagina occupi tutta l'altezza dello schermo */
+  min-height: 100vh;
 }
 
 /* Il contenuto si espande e il footer rimane in fondo */
 .main-content {
   flex: 1; /* Spinge il footer in basso */
   margin-top: 70px; /* Aumenta lo spazio tra navbar e il resto */
-  margin-bottom: 70px; /* Aggiunge spazio prima del footer */
 }
 
 .h1-index {
@@ -125,6 +124,9 @@ footer {
   position: relative;
   z-index: 0;
   line-height: 1.2;
+  word-break: break-word; /* Evita che il testo venga tagliato */
+  width: 100vw; /* Larghezza esattamente quanto la schermata del dispositivo */
+  text-align: center; /* Centra il testo orizzontalmente */
 }
 
 .hero-image {
@@ -273,24 +275,30 @@ body {
 }
 
 .skills-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Larghezza minima aumentata */
+  row-gap: 20px;
+  -moz-column-gap: 15px;
+       column-gap: 15px; /* Maggiore spazio tra le colonne */
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  max-width: 800px;
-  margin: auto;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .skill-card {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center; /* Centra meglio gli elementi */
+  gap: 8px; /* Riduce leggermente lo spazio tra icona e testo */
   background: #f5f5ff;
   border-radius: 10px;
-  padding: 12px 18px;
+  padding: 12px 14px;
   font-size: 1.1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
+  text-align: center;
+  word-wrap: break-word; /* Forza la parola ad andare a capo */
+  white-space: normal; /* Permette al testo di andare a capo */
 }
 
 .skill-card:hover {
@@ -299,8 +307,9 @@ body {
 }
 
 .skill-card img {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0; /* Evita che si deformino */
 }
 
 .skills-container {
